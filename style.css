@@ -665,7 +665,7 @@ form input {
     line-height: 1.5;
     margin-block: 1rem;
 }
-#agradecimientoTexto h2 {
+#agradecimientoTexto a p {
     font-size: 1.75rem;
     margin-bottom: 1.5rem;
     background-color: #f90614;

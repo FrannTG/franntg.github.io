@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Formulario Sorteo The Weeknd</title>
+        <meta name="description" content="Fanpage de The Weeknd" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>The Weeknd</h1>
+            <a href="./index.html"> <img src="assets/weekndlogoblanco.png" alt="Logo de The Weeknd" /></a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./discografia.html">Discografia</a></li>
+                    <li class="activo"><a href="./formulario.html">Sorteo</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="seccionFormulario">
+            <div id="texto">
+                <h1>¿Queres ganarte entradas para ver a The Weeknd en Los angeles?</h1>
+                <p>
+                    ¡No te pierdas la oportunidad! Estamos sorteando un emocionante viaje para dos personas con todos los gastos pagados, ¡y podrías ser uno de
+                    los afortunados! Disfruta del último espectáculo de la gira en Las Vegas
+                </p>
+                <h2>¿Como participo?</h2>
+                <p>
+                    Completa el formulario que se encuentra en la sección derecha de la página; posteriormente, anunciaremos a los afortunados ganadores del
+                    sorteo el día 2 de enero de 2024.
+                </p>
+                <p>Mucha Suerte!</p>
+            </div>
+            <div>
+                <form action="gracias.html" method="post" enctype="multipart/form-data">
+                    <!-- Nombre-->
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="completarTexto" name="nombre" required placeholder="Ingrese su nombre" />
+
+                    <!-- Apellido -->
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="completarTexto" name="apellido" required placeholder="Ingrese su apellido" />
+
+                    <!-- Mail -->
+                    <label for="mail">Mail</label>
+                    <input type="email" class="completarTexto" name="mail" required placeholder="Ingrese su mail" />
+
+                    <!-- Nacimiento -->
+                    <label for="nacimiento">Fecha de Nacimiento</label>
+                    <input type="date" id="nacimiento" name="nacimiento" required />
+
+                    <!-- Adjuntar Imagen -->
+                    <label for="imagen">Adjunta Frente y Dorso de tu DNI</label>
+                    <input type="file" id="adjuntarImagen" name="imagen" accept="image/*" required />
+                    <input type="file" id="adjuntarImagen" name="imagen" accept="image/*" required />
+
+                    <!-- checkbox para discos favoritos -->
+                    <label id="discoFavorito">¿Cuál/es son tus discos favoritos?</label>
+
+                    <div class="opcionDiscoFavorito">
+                        <input type="checkbox" id="dawnFm" name="discos[]" value="Dawn Fm" />
+                        <label for="dawnFm">Dawn Fm</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="afterHours" name="discos[]" value="After Hours" />
+                        <label for="afterHours">After Hours</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="myDearMelancholy" name="discos[]" value="My Dear Melancholy" />
+                        <label for="myDearMelancholy">My Dear Melancholy</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="starboy" name="discos[]" value="Starboy" />
+                        <label for="starboy">Starboy</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="otros" name="discos[]" value="Otros" />
+                        <label for="otros">Otros</label>
+                    </div>
+
+                    <!-- Botón de Envío -->
+                    <input type="submit" id="botonEnviar" value="Enviar" />
+                </form>
+            </div>
+        </main>
+        <footer>
+            <h2>Autor</h2>
+            <img src="assets/Mifoto.png" alt="imagen del autor de la pagina" />
+            <ul>
+                <li>Nombre: Franco Tomas Gaab</li>
+                <li>Edad: 24 años</li>
+                <li>Carrera, Turno Y Modalidad: DWT1AV</li>
+                <li>Materia: Maquetado y desarrollo web</li>
+                <li>Prof. Mabel García</li>
+                <li><a href="mailto:franco.gaab@davinci.edu.ar"> Mail Davinci </a></li>
+                <li><a href="mailto:franco.gaab1999@gmail.com"> Mail Personal</a></li>
+                <li>Este sitio es una entrega para un trabajo practico de primer cuatrimestre de la escuela Da Vinci</li>
+            </ul>
+        </footer>
+    </body>
+</html>

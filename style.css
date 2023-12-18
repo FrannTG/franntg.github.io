@@ -1,0 +1,960 @@
+@font-face {
+    font-family: "oxygenlight";
+    src: url("font/oxygen-light-webfont.woff2") format("woff2"), url("oxygen-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "oxygenregular";
+    src: url("font/oxygen-regular-webfont.woff2") format("woff2"), url("oxygen-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "oxygenbold";
+    src: url("font/oxygen-bold-webfont.woff2") format("woff2"), url("oxygen-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "oxygenlight";
+    src: url("font/oxygen-light-webfont.woff2") format("woff2"), url("oxygen-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "oxygenregular";
+    src: url("font/oxygen-regular-webfont.woff2") format("woff2"), url("oxygen-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "titania_outlineregular";
+    src: url("font/titania-outline-webfont.woff2") format("woff2"), url("titania-outline-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "titaniaregular";
+    src: url("font/titania-regular-webfont.woff2") format("woff2"), url("titania-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "titania_shadowregular";
+    src: url("Font/titania-shadow-webfont.woff2") format("woff2"), url("titania-shadow-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* -----------------------------------BARRA DE NAVEGACION------------------------------------------------------  */
+header {
+    padding-top: 1rem;
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding-inline: 7vw;
+    margin-inline: auto;
+    gap: 1rem;
+    background-color: #080808;
+
+    translate: 0% -100%;
+    animation: slideDown 500ms ease-out forwards;
+
+    z-index: 100;
+}
+
+header .logo {
+    background-image: url("assets/weekndlogoblanco.png");
+    width: 291px;
+    height: 64px;
+    background-repeat: no-repeat;
+}
+
+nav {
+    /* background-color: red; */
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    /* background-color: blue; */
+    justify-content: flex-end;
+    align-items: end;
+    height: 100%;
+    border-bottom: 5px solid white;
+    padding-bottom: 0.5rem;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-family: "oxygenbold";
+    font-size: 1.3rem;
+
+    transition: scale 200ms ease;
+}
+
+nav ul li:hover {
+    scale: 1.05;
+}
+
+nav ul li a {
+    all: unset;
+    cursor: pointer;
+}
+
+header h1 {
+    display: none;
+}
+
+header img {
+    height: 4rem;
+}
+
+nav ul li.activo {
+    color: #f90614;
+}
+
+@keyframes slideDown {
+    100% {
+        translate: 0% 0%;
+    }
+}
+
+/* -----------------------------------------------------------------------------------------------------------------  */
+
+/* -------------------------------------------------------------------------- */
+/*                            HTML 1 - Landing Page                           */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------ASPECTOS GENERALES DEL TEXTO------------------------------------------- */
+
+.contenedorgris {
+    background-color: hsla(0, 0%, 100%, 15%);
+    border-radius: 2rem;
+}
+
+a {
+    color: #f90614;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* -----------------------------------PRIMERA SECCION: DESENTRAÑANDO A THE WEEKND-----------------------------------  */
+
+#banner-inicio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 800px;
+    width: 100%;
+
+    padding-left: 3rem;
+    padding-inline: 7vw;
+
+    background-color: black;
+    background-image: url(assets/weekndperfil.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: scroll;
+}
+
+#banner-inicio h1 {
+    font-family: "titaniaregular";
+    font-size: 3.5rem;
+    text-align: left;
+    width: 35%;
+
+    translate: -30% 0%;
+    opacity: 0;
+
+    animation: fadeInLeft 1000ms ease-out forwards;
+    animation-delay: 500ms;
+}
+#banner-inicio span {
+    color: #f90614;
+}
+
+@keyframes fadeInLeft {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        translate: 0% 0%;
+        opacity: 1;
+    }
+}
+/* --------------------------------------------------------------------------------------------------------------  */
+
+/* ------------------------------------------SEGUNDA SECCION: BIOGRAFIA------------------------------------------  */
+
+#biografia {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#biografia h2 {
+    font-family: "titaniaregular";
+    text-align: left;
+    font-size: 2.5rem;
+    letter-spacing: 0.05ch;
+}
+#biografia p {
+    margin-block: 1.5rem;
+    font-family: "oxygenregular";
+    text-align: left;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+#imagen-biografia {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    background-image: url("assets/weekndparado.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#texto-biografia {
+    flex: 1;
+    padding-top: 6rem;
+    max-width: 100%;
+}
+
+#infobio {
+    padding-right: 7vw;
+    margin-left: 1.5rem;
+}
+/* ------------------------------------------TERCERA SECCION:Acerca del R&B------------------------------------------  */
+#infornb {
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    padding: 1.5rem 7vw 1.5rem 1.5rem;
+}
+
+#infornb p {
+    margin-top: 1.5rem;
+}
+
+/* -------------------------------- Seccion 4: Discografia y premios -------------------------------- */
+#DyP {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding-inline: 7vw;
+    margin-block: 3rem;
+}
+#discografiaIndex {
+    flex: 2;
+    text-align: center;
+}
+#DyP h2 {
+    font-family: "titaniaregular";
+    text-align: left;
+    font-size: 2.5rem;
+    letter-spacing: 0.05ch;
+}
+
+#discografiaIndex p {
+    margin-block: 1.5rem;
+    margin-block: 1.5rem;
+    font-family: "oxygenregular";
+    text-align: left;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+#discografiaIndex img {
+    margin: 1.5rem;
+    transition: scale 200ms ease;
+}
+
+#discografiaIndex img:hover {
+    scale: 1.5;
+}
+
+#premios {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex: 1;
+}
+
+.tarjetapremio {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(0, 0%, 100%, 15%);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    font-family: "titaniaregular";
+}
+
+.tarjetapremio p {
+    font-size: 2.5rem;
+    text-align: start;
+    line-height: 1;
+    font-family: "titaniaregular";
+}
+
+/* ------------------------------------ - ----------------------------------- */
+
+/* ----------------------------- SECCION 5: TOUR ---------------------------- */
+#tour {
+    background-color: aliceblue;
+    color: #080818;
+}
+
+#tour h2 {
+    font-family: "titaniaregular";
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+#fechastour {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 4rem;
+    padding-inline: 7vw;
+    padding-block: 1.5rem;
+}
+
+#fechastour > * {
+    flex: 1;
+}
+
+.tarjetatour {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-family: "titaniaregular";
+    color: white;
+}
+
+.tourmesdia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetatour h3 {
+    font-size: 3.4rem;
+}
+
+.tarjetatour p {
+    font-family: "titaniaregular";
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.tourmesdia {
+    background-color: #080808;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.tourmesdia p {
+    text-align: center;
+}
+
+.tarjetatour span {
+    font-size: 3.4rem;
+    font-weight: bold;
+}
+.tourlugarestadio {
+    padding-bottom: 1rem;
+    color: #080808;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            HTML 2 - DISCOGRAFIA                            */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------- ASPECTOS GENERALES DE LA SECCION -------------------- */
+#Discografia h1 {
+    font-family: "titaniaregular";
+    text-align: center;
+    font-size: 4rem;
+    margin-block: 2rem;
+}
+
+#Discografia a {
+    color: #f90614;
+}
+/* ------------------------------------ - ----------------------------------- */
+
+/* ------------------------------ INDICE DISCOS ----------------------------- */
+
+#indicediscografia {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    background-color: hsla(0, 0%, 100%, 15%);
+    padding: 2rem;
+    border-radius: 2rem;
+    max-width: 60%;
+    margin: auto;
+}
+
+.portadaynombre h2 {
+    font-family: "oxygenregular";
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.portadaynombre:hover {
+    color: white;
+}
+
+/* ------------------- INFORMACION DETALLADA DE CADA DISCO ------------------ */
+.disco {
+    display: flex;
+    gap: 1.5rem;
+    margin: 7vw;
+}
+
+.disco p {
+    font-family: "oxygenregular";
+    text-align: left;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+.disco img {
+    flex: 1;
+}
+
+.disco h2 {
+    margin-bottom: 1rem;
+    font-family: "titaniaregular";
+    text-align: left;
+    font-size: 2.5rem;
+    color: #f90614;
+}
+
+.disco h3 {
+    margin-block: 1rem;
+    font-family: "titaniaregular";
+}
+
+.cancionesyvideos {
+    display: flex;
+    flex-direction: row;
+}
+
+.cancionesyvideos h3 {
+    font-size: 2rem;
+}
+
+.canciones {
+    flex: 1;
+}
+
+.canciones li {
+    list-style-type: none;
+    font-family: "titaniaregular";
+    font-size: 1.25rem;
+}
+
+/* ----------------------------------- -- ----------------------------------- */
+/* --------------------------------- VIDEOS --------------------------------- */
+.videos {
+    flex: 1;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             HTML 3 - FORMULARIO                            */
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------- Formulario ------------------------------- */
+#seccionFormulario {
+    display: flex;
+    flex: 1;
+    gap: 1.5rem;
+}
+
+#texto {
+    margin-block: 3rem;
+    margin-left: 7vw;
+    padding-right: 1.5rem;
+}
+#texto h1 {
+    font-family: "titaniaregular";
+    text-align: left;
+    font-size: 2.5rem;
+    color: #f90614;
+}
+
+#texto h2 {
+    font-family: "titaniaregular";
+}
+
+#texto p {
+    font-family: "oxygenregular";
+    text-align: left;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-block: 1rem;
+}
+
+#texto > p:last-of-type {
+    font-family: "titaniaregular";
+    text-align: left;
+    font-size: 2rem;
+    color: #f90614;
+}
+
+#formulario {
+    margin-right: 7vw;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: center;
+    /* margin-inline: 30vw; */
+    margin-right: 7vw;
+    background-color: hsla(0, 0%, 100%, 15%);
+    border-radius: 2rem;
+    padding: 1.5rem;
+}
+
+label {
+    font-family: "titaniaregular";
+    margin-bottom: 1rem;
+}
+
+.completarTexto {
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 5px solid white;
+    margin-inline: 10rem;
+
+    /* border-color: grey; */
+    font-family: "oxygenregular";
+    /* font-family: "titaniaregular"; */
+}
+
+.completarTexto::placeholder {
+    color: rgba(255, 255, 255, 0.397);
+}
+input.completarTexto {
+    margin-bottom: 2rem;
+    color: white;
+}
+.completarClicks {
+    font-size: 1rem;
+    font-family: "titaniaregular";
+    margin-inline: 10rem;
+    margin-bottom: 2rem;
+    color: #080808;
+}
+
+#nacimiento {
+    font-size: 1rem;
+    font-family: "titaniaregular";
+    margin-inline: 20rem;
+    margin-bottom: 2rem;
+    color: #080808;
+}
+
+#adjuntarImagen {
+    font-size: 1rem;
+    font-family: "titaniaregular";
+    margin-inline: 10rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.397);
+}
+
+#botonEnviar {
+    font-size: 2rem;
+    font-family: "titaniaregular";
+    margin-bottom: 1.5rem;
+    background-color: #f90614;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-inline: 15rem;
+    margin-top: 1.5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               HTML 4- GRACIAS                              */
+/* -------------------------------------------------------------------------- */
+/* ------------------------------- Gracias ------------------------------- */
+
+#agradecimientoTexto {
+    background-color: hsla(0, 0%, 100%, 15%);
+    border-radius: 2rem;
+    margin-inline: 7vw;
+    margin-block: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#agradecimientoTexto h1 {
+    font-size: 3rem;
+    font-family: "titaniaregular";
+    color: #f90614;
+    margin-top: 1.5rem;
+}
+
+#agradecimientoTexto p {
+    font-size: 2rem;
+    padding-inline: 2.5rem;
+    font-family: "oxygenregular";
+    text-align: left;
+
+    line-height: 1.5;
+    margin-block: 1rem;
+}
+#agradecimientoTexto h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    background-color: #f90614;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-family: "titaniaregular";
+}
+/* ------------------------- Footer:Datos del Autor ------------------------- */
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer h2 {
+    text-align: center;
+    padding: 1.5rem;
+    font-family: "titaniaregular";
+    font-size: 3rem;
+}
+
+footer img {
+    margin-bottom: 1.4rem;
+}
+
+footer ul {
+    font-family: "oxygenregular";
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 MEDIA QUERY                                */
+/* -------------------------------------------------------------------------- */
+
+/* ---------------------- TAMAÑO CELULAR ( HASTA 480px) --------------------- */
+
+@media only screen and (max-width: 480px) {
+    /* ----------------------------------- NAV ---------------------------------- */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+        gap: 1.5rem;
+        /* background-color: blue; */
+        justify-content: center;
+    }
+    /* ------------------------------------ - ----------------------------------- */
+    /* ------------------------ Primera seccion bio y RnB ----------------------- */
+
+    #banner-inicio {
+        flex-direction: column;
+        background-image: url(assets/weekndperfil480px.png);
+
+        height: 400px;
+    }
+
+    #banner-inicio h1 {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    #biografia {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #biografia h2 {
+        text-align: center;
+    }
+    #biografia p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    #imagen-biografia {
+        content: url(assets/weekndparadoretrato.png);
+        display: none;
+    }
+
+    #texto-biografia {
+        padding-top: 1rem;
+    }
+
+    #infornb {
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+
+    #infornb .contenedorgris {
+        border-radius: 0rem;
+    }
+    /* ------------------------------------ - ----------------------------------- */
+    /* -------------------------- Discografia y premio -------------------------- */
+    #DyP {
+        flex-direction: column;
+    }
+
+    #DyP h2 {
+        text-align: center;
+    }
+
+    #DyP p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    #discografiaIndex img {
+        margin: 0.5rem;
+        transition: scale 200ms ease;
+    }
+
+    .tarjetapremio {
+        margin-inline: 4rem;
+    }
+    /* ------------------------------------ - ----------------------------------- */
+    /* ---------------------------------- Tour ---------------------------------- */
+    #tour h2 {
+        padding: 0rem;
+    }
+    #fechastour {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    /* #fechastour p {
+        font-size: ;
+    } */
+
+    .tarjetatour p {
+        font-family: "titaniaregular";
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    .tarjetatour span {
+        font-size: 1.2rem;
+    }
+    .tourmesdia {
+        padding: 1rem;
+        border-radius: 0.7rem;
+    }
+    /* ------------------------------------ - ----------------------------------- */
+    /* --------------------------------- Footer --------------------------------- */
+    footer h2 {
+        padding: 0rem;
+    }
+    footer img {
+        content: url(assets/Mifotochiquita.png);
+    }
+    footer ul li {
+        font-size: 1rem;
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                             HTML2: DISCOGRAFIA                             */
+    /* -------------------------------------------------------------------------- */
+    #Discografia h1 {
+        font-size: 2.5rem;
+    }
+
+    #Discografia p {
+        font-size: 1rem;
+    }
+
+    #Discografia h2 {
+        text-align: center;
+    }
+
+    #Discografia h3 {
+        text-align: center;
+    }
+
+    #discografia ol {
+        text-align: center;
+        justify-content: center;
+    }
+    #indicediscografia {
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: 100%;
+        background-color: aliceblue;
+        border-radius: 0rem;
+    }
+    #indicediscografia h2 {
+        color: #080808;
+    }
+
+    .disco {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .disco h2 {
+        justify-content: center;
+    }
+    .cancionesyvideos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cancionesyvideos h {
+        text-align: center;
+    }
+    iframe {
+        width: 280px;
+        padding-bottom: 1rem;
+    }
+    #seccionDiscoStarboy,
+    #seccionDiscoAfterHours {
+        padding: 1rem;
+        background-color: hsla(0, 0%, 100%, 15%);
+        border-radius: 2rem;
+        /* border-bottom-right-radius: 2rem; */
+    }
+
+    #seccionDiscoStarboy img {
+        content: url(assets/portadaAlbumes350px/Starboy350px.png);
+    }
+    #seccionDiscoMyDear img {
+        content: url(assets/portadaAlbumes350px/Mydearmelancholy350px.png);
+    }
+    #seccionDiscoAfterHours img {
+        content: url(assets/portadaAlbumes350px/AfterHours350px.jpg);
+    }
+    #seccionDiscoDawnFM img {
+        content: url(assets/portadaAlbumes350px/DwnFM350px.png);
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                                HTML 3 SORTEO                               */
+    /* -------------------------------------------------------------------------- */
+    #seccionFormulario {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    #texto {
+        margin-left: 0rem;
+        margin-bottom: 1rem;
+        padding-left: 2rem;
+    }
+    #texto h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    #texto h2 {
+        text-align: center;
+    }
+
+    #texto h3 {
+        text-align: center;
+    }
+
+    #texto p {
+        text-align: center;
+        font-size: 1rem;
+    }
+    #texto > p:last-of-type {
+        text-align: center;
+        font-size: 2rem;
+        color: #f90614;
+    }
+    form {
+        margin-left: 7vw;
+    }
+    form .completarTexto {
+        margin-inline: 0.1rem;
+        margin-bottom: 2rem;
+    }
+
+    label {
+        margin-bottom: 0.5rem;
+    }
+
+    #nacimiento {
+        margin-inline: 5rem;
+        margin-bottom: 2rem;
+        color: #080808;
+    }
+
+    #adjuntarImagen {
+        margin-inline: 0.1rem;
+        margin-bottom: 2rem;
+    }
+
+    #botonEnviar {
+        font-size: 2rem;
+        font-family: "titaniaregular";
+        margin-bottom: 1.5rem;
+
+        border-radius: 1rem;
+        margin-inline: 0rem;
+        margin-top: 1.5rem;
+    }
+
+    /* ----------------------------- HTML 4: GRACIAS ---------------------------- */
+    #agradecimientoTexto p {
+        font-size: 1rem;
+    }
+    #agradecimientoTexto h1 {
+        font-size: 2.5rem;
+    }
+
+    #agradecimientoTexto h2 {
+        font-size: 1.2rem;
+    }
+}

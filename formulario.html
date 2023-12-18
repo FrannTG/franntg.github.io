@@ -37,24 +37,25 @@
                 <form action="gracias.html" method="post" enctype="multipart/form-data">
                     <!-- Nombre-->
                     <label for="nombre">Nombre</label>
-                    <input type="text" class="completarTexto" name="nombre" required placeholder="Ingrese su nombre" />
+                    <input type="text" class="completarTexto" name="nombre" id="nombre" required placeholder="Ingrese su nombre" />
 
                     <!-- Apellido -->
                     <label for="apellido">Apellido</label>
-                    <input type="text" class="completarTexto" name="apellido" required placeholder="Ingrese su apellido" />
+                    <input type="text" class="completarTexto" name="apellido" id="apellido" required placeholder="Ingrese su apellido" />
 
                     <!-- Mail -->
                     <label for="mail">Mail</label>
-                    <input type="email" class="completarTexto" name="mail" required placeholder="Ingrese su mail" />
+                    <input type="email" class="completarTexto" name="mail" id="mail" required placeholder="Ingrese su mail" />
 
                     <!-- Nacimiento -->
                     <label for="nacimiento">Fecha de Nacimiento</label>
                     <input type="date" id="nacimiento" name="nacimiento" required />
 
                     <!-- Adjuntar Imagen -->
-                    <label id="adjuntos" for="imagen">Adjunta Frente y Dorso de tu DNI</label>
-                    <input type="file" id="adjuntarImagen" name="imagen" accept="image/*" required />
-                    <input type="file" id="adjuntarImagen" name="imagen" accept="image/*" required />
+                    <label class="adjuntos" for="imagen1">Adjunta el frente de tu DNI</label>
+                    <input type="file" class="adjuntarImagen" name="imagen" id="imagen1" accept="image/*" required />
+                    <label class="adjuntos" for="imagen2">Adjunta el dorso de tu DNI</label>
+                    <input type="file" class="adjuntarImagen" name="imagen" id="imagen2" accept="image/*" required />
 
                     <!-- checkbox para discos favoritos -->
                     <label id="discoFavorito">¿Cuál/es son tus discos favoritos?</label>

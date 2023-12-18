@@ -572,7 +572,7 @@ form input {
 }
 
 #discoFavorito,
-#adjuntos {
+.adjuntos {
     width: 100%;
     text-align: start;
 }
@@ -610,7 +610,7 @@ form input {
     width: min-content;
 }
 
-#adjuntarImagen {
+.adjuntarImagen {
     width: 100%;
     font-size: 1rem;
     font-family: "titaniaregular";
@@ -917,11 +917,11 @@ footer ul li {
         color: #080808;
     }
 
-    #adjuntarImagen {
+    .adjuntarImagen {
         margin-bottom: 2rem;
     }
 
-    #adjuntos,
+    .adjuntos,
     #discoFavorito {
         text-align: center;
     }

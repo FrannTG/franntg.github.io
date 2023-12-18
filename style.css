@@ -747,11 +747,6 @@ footer ul li {
         font-size: 1rem;
     }
 
-    #imagen-biografia {
-        content: url(assets/weekndparadoretrato.png);
-        display: none;
-    }
-
     #texto-biografia {
         padding-top: 1rem;
     }
@@ -875,19 +870,6 @@ footer ul li {
         background-color: hsla(0, 0%, 100%, 15%);
         border-radius: 2rem;
         /* border-bottom-right-radius: 2rem; */
-    }
-
-    #seccionDiscoStarboy img {
-        content: url(assets/portadaAlbumes350px/Starboy350px.png);
-    }
-    #seccionDiscoMyDear img {
-        content: url(assets/portadaAlbumes350px/Mydearmelancholy350px.png);
-    }
-    #seccionDiscoAfterHours img {
-        content: url(assets/portadaAlbumes350px/AfterHours350px.jpg);
-    }
-    #seccionDiscoDawnFM img {
-        content: url(assets/portadaAlbumes350px/DwnFM350px.png);
     }
 
     /* -------------------------------------------------------------------------- */

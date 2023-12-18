@@ -34,7 +34,7 @@
                 <p>Mucha Suerte!</p>
             </div>
             <div>
-                <form action="gracias.html" method="get" enctype="multipart/form-data">
+                <form action="gracias.html" method="post" enctype="multipart/form-data">
                     <!-- Nombre-->
                     <label for="nombre">Nombre</label>
                     <input type="text" class="completarTexto" name="nombre" required placeholder="Ingrese su nombre" />
@@ -91,7 +91,10 @@
         </main>
         <footer>
             <h2>Autor</h2>
-            <img src="assets/Mifoto.png" alt="imagen del autor de la pagina" />
+            <picture>
+                <source media="(max-width:480px)" srcset="assets/Mifotochiquita.png" />
+                <img src="assets/Mifoto.png" alt="imagen del autor de la pagina" />
+            </picture>
             <ul>
                 <li>Nombre: Franco Tomas Gaab</li>
                 <li>Edad: 24 años</li>

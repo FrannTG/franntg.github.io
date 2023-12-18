@@ -500,15 +500,18 @@ a {
 /* ------------------------------- Formulario ------------------------------- */
 #seccionFormulario {
     display: flex;
-    flex: 1;
     gap: 1.5rem;
+    padding-inline: 7vw;
+}
+
+#seccionFormulario > * {
+    flex: 1;
 }
 
 #texto {
     margin-block: 3rem;
-    margin-left: 7vw;
-    padding-right: 1.5rem;
 }
+
 #texto h1 {
     font-family: "titaniaregular";
     text-align: left;
@@ -535,51 +538,66 @@ a {
     color: #f90614;
 }
 
-#formulario {
-    margin-right: 7vw;
-}
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     font-size: 2rem;
     text-align: center;
-    /* margin-inline: 30vw; */
-    margin-right: 7vw;
+
     background-color: hsla(0, 0%, 100%, 15%);
     border-radius: 2rem;
-    padding: 1.5rem;
+    padding-block: 3rem;
+    padding-inline: 5vw;
 }
 
 label {
     font-family: "titaniaregular";
-    margin-bottom: 1rem;
 }
 
+form > div {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+form > div > label {
+    font-size: 1.5rem;
+}
+
+form input {
+    margin-top: 0.5rem;
+}
+
+#discoFavorito,
+#adjuntos {
+    width: 100%;
+    text-align: start;
+}
 .completarTexto {
-    box-sizing: border-box;
     font-size: 1.5rem;
     background-color: transparent;
     border: none;
     border-bottom: 5px solid white;
-    margin-inline: 10rem;
 
     /* border-color: grey; */
     font-family: "oxygenregular";
     /* font-family: "titaniaregular"; */
+    margin-bottom: 2rem;
+    color: white;
+    width: 100%;
 }
 
 .completarTexto::placeholder {
     color: rgba(255, 255, 255, 0.397);
 }
-input.completarTexto {
-    margin-bottom: 2rem;
-    color: white;
-}
+
 .completarClicks {
     font-size: 1rem;
     font-family: "titaniaregular";
-    margin-inline: 10rem;
+    /* margin-inline: 10rem; */
     margin-bottom: 2rem;
     color: #080808;
 }
@@ -587,20 +605,22 @@ input.completarTexto {
 #nacimiento {
     font-size: 1rem;
     font-family: "titaniaregular";
-    margin-inline: 20rem;
     margin-bottom: 2rem;
     color: #080808;
+    width: min-content;
 }
 
 #adjuntarImagen {
+    width: 100%;
     font-size: 1rem;
     font-family: "titaniaregular";
-    margin-inline: 10rem;
-    margin-bottom: 2rem;
+    /* margin-inline: 10rem; */
+    margin-block: 1rem;
     color: rgba(255, 255, 255, 0.397);
 }
 
 #botonEnviar {
+    border: none;
     font-size: 2rem;
     font-family: "titaniaregular";
     margin-bottom: 1.5rem;
@@ -608,8 +628,9 @@ input.completarTexto {
     color: white;
     padding: 1rem;
     border-radius: 1rem;
-    margin-inline: 15rem;
+    /* margin-inline: 15rem; */
     margin-top: 1.5rem;
+    width: 100%;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -794,16 +815,6 @@ footer ul li {
         border-radius: 0.7rem;
     }
     /* ------------------------------------ - ----------------------------------- */
-    /* --------------------------------- Footer --------------------------------- */
-    footer h2 {
-        padding: 0rem;
-    }
-    footer img {
-        content: url(assets/Mifotochiquita.png);
-    }
-    footer ul li {
-        font-size: 1rem;
-    }
 
     /* -------------------------------------------------------------------------- */
     /*                             HTML2: DISCOGRAFIA                             */
@@ -888,9 +899,7 @@ footer ul li {
     }
 
     #texto {
-        margin-left: 0rem;
         margin-bottom: 1rem;
-        padding-left: 2rem;
     }
     #texto h1 {
         font-size: 2.5rem;
@@ -913,11 +922,7 @@ footer ul li {
         font-size: 2rem;
         color: #f90614;
     }
-    form {
-        margin-left: 7vw;
-    }
     form .completarTexto {
-        margin-inline: 0.1rem;
         margin-bottom: 2rem;
     }
 
@@ -926,14 +931,17 @@ footer ul li {
     }
 
     #nacimiento {
-        margin-inline: 5rem;
         margin-bottom: 2rem;
         color: #080808;
     }
 
     #adjuntarImagen {
-        margin-inline: 0.1rem;
         margin-bottom: 2rem;
+    }
+
+    #adjuntos,
+    #discoFavorito {
+        text-align: center;
     }
 
     #botonEnviar {
@@ -956,5 +964,15 @@ footer ul li {
 
     #agradecimientoTexto h2 {
         font-size: 1.2rem;
+    }
+    /* --------------------------------- Footer --------------------------------- */
+    footer h2 {
+        padding: 0rem;
+    }
+    footer img {
+        content: url(assets/Mifotochiquita.png);
+    }
+    footer ul li {
+        font-size: 1rem;
     }
 }

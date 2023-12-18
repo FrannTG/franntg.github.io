@@ -708,7 +708,7 @@ footer ul li {
 
 /* ---------------------- TAMAÑO CELULAR ( HASTA 480px) --------------------- */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
     /* ----------------------------------- NAV ---------------------------------- */
     header {
         flex-direction: column;

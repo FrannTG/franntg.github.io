@@ -550,6 +550,8 @@ form {
     border-radius: 2rem;
     padding-block: 3rem;
     padding-inline: 5vw;
+
+    margin-top: 2rem;
 }
 
 label {

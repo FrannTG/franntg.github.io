@@ -92,14 +92,13 @@ header .logo {
 }
 
 nav {
-    /* background-color: red; */
     flex: 1;
 }
 
 nav ul {
     display: flex;
     gap: 1.5rem;
-    /* background-color: blue; */
+
     justify-content: flex-end;
     align-items: end;
     height: 100%;
@@ -583,10 +582,7 @@ form input {
     background-color: transparent;
     border: none;
     border-bottom: 5px solid white;
-
-    /* border-color: grey; */
     font-family: "oxygenregular";
-    /* font-family: "titaniaregular"; */
     margin-bottom: 2rem;
     color: white;
     width: 100%;
@@ -599,7 +595,6 @@ form input {
 .completarClicks {
     font-size: 1rem;
     font-family: "titaniaregular";
-    /* margin-inline: 10rem; */
     margin-bottom: 2rem;
     color: #080808;
 }
@@ -616,7 +611,6 @@ form input {
     width: 100%;
     font-size: 1rem;
     font-family: "titaniaregular";
-    /* margin-inline: 10rem; */
     margin-block: 1rem;
     color: rgba(255, 255, 255, 0.397);
 }
@@ -630,7 +624,6 @@ form input {
     color: white;
     padding: 1rem;
     border-radius: 1rem;
-    /* margin-inline: 15rem; */
     margin-top: 1.5rem;
     width: 100%;
 }
@@ -719,7 +712,6 @@ footer ul li {
     nav ul {
         display: flex;
         gap: 1.5rem;
-        /* background-color: blue; */
         justify-content: center;
     }
     /* ------------------------------------ - ----------------------------------- */
@@ -794,10 +786,6 @@ footer ul li {
         gap: 0rem;
     }
 
-    /* #fechastour p {
-        font-size: ;
-    } */
-
     .tarjetatour p {
         font-family: "titaniaregular";
         font-size: 1rem;
@@ -871,7 +859,6 @@ footer ul li {
         padding: 1rem;
         background-color: hsla(0, 0%, 100%, 15%);
         border-radius: 2rem;
-        /* border-bottom-right-radius: 2rem; */
     }
 
     /* -------------------------------------------------------------------------- */
